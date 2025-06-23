@@ -2,16 +2,16 @@
 A Retrieval-Augmented Generation (RAG) system for querying music data from the Chinook SQLite database. The system uses LangChain, OpenAI's GPT-4o, and fuzzy matching to handle natural language queries about artists, albums, and genres, with robust error handling and fallback mechanisms.
 
 ## Features
-**Query Types**:
-- Artist lookup: e.g., "Which artist released the album 'Supernatural'?" → Returns "Santana."
-- Album count: e.g., "How many albums does AC/DC have?" → Returns the number of albums.
-- Album list: e.g., "List the albums by U2." → Returns a list of albums like "Achtung Baby," "Zooropa."
-- Genre tracks: e.g., "Which tracks belong to the Metal genre?" → Returns a list of tracks.
-**Misspelling Handling**: Uses fuzzy matching to correct misspellings (e.g., "Greeen Day" → "Green Day").
-**Fallback Mechanisms**: Partial album title matching (e.g., "Diary" → "Diary of a Madman" by Ozzy Osbourne).
-**Error Handling**: Gracefully handles invalid inputs (e.g., "Unknown Band XYZ" → "No albums found").
-**SQL Validation**: Ensures plausible results (e.g., limits album counts to ≤10).
-**Caching**: Persistent caching for database lists and retriever results to improve efficiency.
+- **Query Types**:
+Artist lookup: e.g., "Which artist released the album 'Supernatural'?" → Returns "Santana."
+Album count: e.g., "How many albums does AC/DC have?" → Returns the number of albums.
+Album list: e.g., "List the albums by U2." → Returns a list of albums like "Achtung Baby," "Zooropa."
+Genre tracks: e.g., "Which tracks belong to the Metal genre?" → Returns a list of tracks.
+- **Misspelling Handling**: Uses fuzzy matching to correct misspellings (e.g., "Greeen Day" → "Green Day").
+- **Fallback Mechanisms**: Partial album title matching (e.g., "Diary" → "Diary of a Madman" by Ozzy Osbourne).
+- **Error Handling**: Gracefully handles invalid inputs (e.g., "Unknown Band XYZ" → "No albums found").
+- **SQL Validation**: Ensures plausible results (e.g., limits album counts to ≤10).
+- **Caching**: Persistent caching for database lists and retriever results to improve efficiency.
 
 Installation
 
