@@ -17,7 +17,7 @@ A Retrieval-Augmented Generation (RAG) system for querying music data from the C
 
 1. **Clone the Repository**:
 ```bash
-git clone https://github.com/your-username/MusicRAGSystem.git
+git clone https://github.com/Dinhngoclam2906/MusicRAGSystem.git
 cd MusicRAGSystem
 ```
 2. **Install Dependencies**:
