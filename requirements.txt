@@ -1,0 +1,1 @@
+langchain==0.3.26\nlangchain-openai==0.3.24\nlangchain-community==0.3.26\nlangchain-huggingface==0.3.0\nlanggraph==0.4.8\nfaiss-cpu==1.11.0\nfuzzywuzzy==0.18.0\npython-Levenshtein==0.27.1\ntenacity==9.1.2\nnumpy==2.0.2\nsentence-transformers==4.1.0\ntransformers==4.52.4\nopenai==1.86.0
