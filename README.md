@@ -16,10 +16,11 @@ Genre tracks: e.g., "Which tracks belong to the Metal genre?" → Returns a list
 
 ## Installation:
 1. **Clone the Repository**:
+```bash
 git clone https://github.com/Dinhngoclam2906/MusicRAGSystem.git
 cd MusicRAGSystem
 
-2. **Install Dependencies**:
+3. **Install Dependencies**:
 - Requires Python 3.8+.
 - Install required packages:pip install langchain langchain-openai langchain-community langchain-huggingface fuzzywuzzy python-Levenshtein faiss-cpu tenacity
 
