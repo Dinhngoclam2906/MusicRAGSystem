@@ -23,14 +23,26 @@ cd MusicRAGSystem
 
 3. **Install Dependencies**:
 - Requires Python 3.8+.
-- Install required packages:pip install langchain langchain-openai langchain-community langchain-huggingface fuzzywuzzy python-Levenshtein faiss-cpu tenacity
+- Install required packages:
+```bash
+pip install -r requirements.txt
+```
 
 3. **Set Up Environment**:
-- Create a .env file with your OpenAI API key:OPENAI_API_KEY=your-api-key
-- Ensure the Chinook database (Chinook.db) is in the project root or at /content/Chinook.db.
+- Create a .env file with your API keys:
+```bash
+OPENAI_API_KEY=your-api-key
+LANGCHAIN_API_KEY=your-langchain-api-key
+```
+- Generate the Chinook database from the provided SQL file:
+```bash
+sqlite3 Chinook.db < Chinook_Sqlite.sql
+```
 
 4. **Run the Script**:
-python rag_system.py
+```bash
+python music_query_rag_đinh_ngọc_lâm.py
+```
 
 ## Usage:
 The script runs a set of test prompts and generated questions, querying the Chinook database for music-related information. Example queries:
