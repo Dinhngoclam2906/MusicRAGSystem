@@ -681,8 +681,3 @@ if __name__ == "__main__":
         ask_with_agent(q)
         print("----")
         time.sleep(30)  # Increased delay to avoid rate limits
-
-!mkdir -p /content/MusicRAGSystem
-!ls /content/
-
-!mv /content/rag_system.py /content/MusicRAGSystem/
