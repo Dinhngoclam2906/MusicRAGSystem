@@ -1,6 +1,6 @@
-# **MusicRAGSystem**
+# **Music Text-to-SQL RAGSystem**
 
-A Retrieval-Augmented Generation (RAG) system for querying music data from the Chinook SQLite database. The system uses LangChain, OpenAI's GPT-4o, and fuzzy matching to handle natural language queries about artists, albums, and genres, with robust error handling and fallback mechanisms.
+A Retrieval-Augmented Generation (RAG) system for transforming text questions into SQL to query music data from the Chinook SQLite database. The system uses LangChain, OpenAI's GPT-4o, and fuzzy matching to handle natural language queries about artists, albums, and genres, with robust error handling and fallback mechanisms.
 
 ## Features
 - **Query Types:**
