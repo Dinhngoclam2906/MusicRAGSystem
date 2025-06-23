@@ -11,7 +11,7 @@ A Retrieval-Augmented Generation (RAG) system for querying music data from the C
 - **Fallback Mechanisms**: Partial album title matching (e.g., `"Diary"` → "Diary of a Madman" by Ozzy Osbourne).
 - **Error Handling**: Gracefully handles invalid inputs (e.g., `"Unknown Band XYZ"` → "No albums found").
 - **SQL Validation**: Ensures plausible results (e.g., limits album counts to ≤10).
-- **Caching**: Persistent caching for database lists and retriever results to improve efficiency.
+- **Caching**: Persistent caching for database lists (`db_cache.json`) and retriever results (`retriever_cache.pkl`) to improve efficiency.
 
 ## How It Works
 The system processes natural language queries about music data in the Chinook database through a series of steps:
