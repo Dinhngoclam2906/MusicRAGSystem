@@ -18,7 +18,7 @@ Genre tracks: e.g., "Which tracks belong to the Metal genre?" → Returns a list
 1. **Clone the Repository**:
 ```bash
 git clone https://github.com/Dinhngoclam2906/MusicRAGSystem.git
-cd MusicRAGSystem
+cd MusicRAGSystem```
 
 3. **Install Dependencies**:
 - Requires Python 3.8+.
