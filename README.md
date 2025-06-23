@@ -22,7 +22,10 @@ cd MusicRAGSystem
 ```
 2. **Install Dependencies**:
 - Requires Python 3.8+.
-- Install required packages:pip install langchain langchain-openai langchain-community langchain-huggingface fuzzywuzzy python-Levenshtein faiss-cpu tenacity
+- Install required packages:
+```bash
+pip install -r requirements.txt
+```
 
 3. **Set Up Environment**:
 
