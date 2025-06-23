@@ -1,7 +1,7 @@
 # **Music Text-to-SQL RAG**
 A Retrieval-Augmented Generation (RAG) system for querying music data from the Chinook SQLite database. The system uses LangChain, OpenAI's GPT-4o, and fuzzy matching to handle natural language queries about artists, albums, and genres, with robust error handling and fallback mechanisms.
 
-##Features
+## Features
 - **Query Types**:
 * Artist lookup: e.g., "Which artist released the album 'Supernatural'?" → Returns "Santana."
 * Album count: e.g., "How many albums does AC/DC have?" → Returns the number of albums.
