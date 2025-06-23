@@ -14,11 +14,11 @@ A Retrieval-Augmented Generation (RAG) system for querying music data from the C
 - **Caching**: Persistent caching for database lists and retriever results to improve efficiency.
 
 ## How It Works
-The MusicRAGSystem processes natural language queries about music data in the Chinook database through a series of steps:
-1. **Query Input**: The user enters a query (e.g., `"How many albums does Greeen Day have?"`).
-2. **Preprocessing**: The system extracts key terms (e.g., artist names, album titles) and corrects misspellings using fuzzy matching (e.g., "Greeen Day" → "Green Day").
+The system processes natural language queries about music data in the Chinook database through a series of steps:
+1. **Query Input**: User enters a query (e.g., `"How many albums does Greeen Day have?"`).
+2. **Preprocessing**: System extracts key terms (e.g., artist names, album titles) and corrects misspellings using fuzzy matching (e.g., "Greeen Day" → "Green Day").
 3. **Name Resolution**: A vector retriever (powered by OpenAI embeddings) matches query terms to known artists, albums, or genres in the database, with caching to improve speed.
-4. **SQL Generation**: The system creates a tailored SQL query (e.g., `SELECT COUNT(*) FROM Album WHERE ArtistId = ...`) based on the query type (e.g., count, list).
+4. **SQL Generation**: System creates a tailored SQL query (e.g., `SELECT COUNT(*) FROM Album WHERE ArtistId = ...`) based on the query type (e.g., count, list).
 5. **Database Query**: The SQL query runs against the Chinook database to fetch results, with validation to ensure accuracy (e.g., album counts ≤10).
 6. **Result Formatting**: Results are formatted into user-friendly responses (e.g., "Green Day has 2 album(s)") with explanations of the SQL used.
 If no exact match is found (e.g., for a partial album title like "Diary"), the system falls back to partial matching. This flow ensures accurate and robust handling of diverse queries.
